@@ -1,0 +1,17 @@
+2) As you can see this code is much faster than selection sort. (it has no nested loop) 
+What do you think is the reason this is not very widely used?
+
+Ans: There are two reasons why we generally won't use counting sort:
+1) Time complexity of order( O(size of the list to be sorted + Range of integers in the list))
+2) space complexity of order(O(Range of integers in the list))
+
+1) Time Complexity: If we look at it, it seems reasonably good sorting technique as its time for sorting 
+                    directly varies with the size of the input list and range of the input list.
+                    But there is a faultline line here. Suppose if one of the numbers in the list is considerably higher 
+                    of the order 1000's  or more then we'll be deealing with the time complexity in the range of cubes or 
+                    more.
+
+2) Space Complexity: Yes, the order is just the range of integers. But if we look closely, here we are creating a list
+                    based on this number. Since lisst is mutable it occupies more space than the immutable data types
+                    and if the range is in higher orders then more space gets wasted there by reducing the efficiency 
+                    of memory management of the system.
